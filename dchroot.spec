@@ -7,9 +7,9 @@ License:	GPL
 Group:		Applications/System
 Source0:	http://ftp.debian.org/debian/pool/main/d/%{name}/%{name}_%{version}.tar.gz
 # Source0-md5:	717673f3fc9ddbcba0004b8c21a8e7ec
-# Source0-size:	19595
 URL:		http://packages.qa.debian.org/d/dchroot.html
 BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	help2man
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -27,8 +27,8 @@ Wykonywanie poleceñ w innym g³ównym systemie.
 %{__autoconf}
 %configure
 
-%{__make}
-%{__make} dchroot.1
+%{__make} docs \
+	CC="%{__cc}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
