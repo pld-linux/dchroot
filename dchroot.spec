@@ -5,7 +5,7 @@ Version:	0.11
 Release:	1
 License:	GPL
 Group:		Applications/System
-Source0:	http://ftp.debian.org/debian/pool/main/d/%{name}/%{name}_%{version}.tar.gz
+Source0:	http://ftp.debian.org/debian/pool/main/d/dchroot/%{name}_%{version}.tar.gz
 # Source0-md5:	7eba43966a03f8b3e0f3697eaa4416dc
 URL:		http://packages.qa.debian.org/d/dchroot.html
 BuildRequires:	autoconf
@@ -43,5 +43,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README TODO debian/changelog
 %attr(4755,root,root) %{_bindir}/%{name}
-%attr(640,root,root) %verify(not md5 size mtime) %config(noreplace) %{_sysconfdir}/%{name}.conf
+%attr(640,root,root) %verify(not md5 mtime size) %config(noreplace) %{_sysconfdir}/%{name}.conf
 %{_mandir}/man?/*
