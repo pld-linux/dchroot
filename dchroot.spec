@@ -1,12 +1,12 @@
 Summary:	Execute commands under different root filesystems
 Summary(pl):	Wykonywanie poleceñ w innym g³ównym systemie
 Name:		dchroot
-Version:	0.11
+Version:	0.12
 Release:	1
 License:	GPL
 Group:		Applications/System
 Source0:	http://ftp.debian.org/debian/pool/main/d/dchroot/%{name}_%{version}.tar.gz
-# Source0-md5:	7eba43966a03f8b3e0f3697eaa4416dc
+# Source0-md5:	ea6b76c6bea7a0f219046a06752e79d7
 URL:		http://packages.qa.debian.org/d/dchroot.html
 BuildRequires:	autoconf
 BuildRequires:	automake
