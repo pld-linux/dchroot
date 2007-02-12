@@ -1,5 +1,5 @@
 Summary:	Execute commands under different root filesystems
-Summary(pl.UTF-8):   Wykonywanie poleceń w innym głównym systemie
+Summary(pl.UTF-8):	Wykonywanie poleceń w innym głównym systemie
 Name:		dchroot
 Version:	0.13
 Release:	1
